@@ -1,0 +1,26 @@
+# CadastroSimples
+
+CadastroSimples é um projeto em C# que permite cadastrar e exibir informações básicas de um usuário diretamente pelo console.
+
+## Funcionalidades
+
+O programa realiza o seguinte:
+
+- Solicita ao usuário seu **nome completo**.
+- Pergunta **quantos quartos** existem na casa.
+- Recebe o **preço de um produto**.
+- Recebe **sobrenome, idade e altura** em uma única linha.
+- Exibe todas as informações de forma formatada no console.
+
+##
+
+## Tecnologias
+
+- Linguagem: C#
+- Plataforma: .NET (Console Application)
+- Conceitos aplicados:
+  - Leitura de dados via `Console.ReadLine()`
+  - Conversão de tipos (`int.Parse`, `double.Parse`)
+  - Uso de `CultureInfo.InvariantCulture` para formatação de números
+  - Arrays para separar múltiplos dados em uma linha
+  - Interpolação de strings (`$""`) para exibir informações
