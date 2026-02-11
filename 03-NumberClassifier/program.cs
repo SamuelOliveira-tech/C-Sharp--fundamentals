@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace MyApp
@@ -14,12 +14,14 @@ namespace MyApp
             Console.WriteLine("Enter as many numbers as you want to sort them.:\n(To finish typing, press the enter key)\n");
 
             while (x != "") {
+
                 Console.Write("-->");
                 x = Console.ReadLine();
 
                 if (x != "") {
                     numeros.Add(int.Parse(x));
                 }
+
             }
 
             Console.WriteLine("\nClassification of the numbers entered:\n");
@@ -36,6 +38,9 @@ namespace MyApp
                     Console.WriteLine($"is odd.");
                 }
             }
+
+
+
         }
     }
 }

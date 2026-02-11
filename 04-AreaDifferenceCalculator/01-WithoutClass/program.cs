@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Globalization;
 
 namespace MyApp
@@ -29,13 +29,16 @@ namespace MyApp
             Console.WriteLine("\nArea of the triangle x = " + areaX.ToString("F4", CultureInfo.InvariantCulture) + " meters");
             Console.WriteLine("Area of the triangle y = " + areaY.ToString("F4", CultureInfo.InvariantCulture) + " meters");
 
-            if (areaX > areaY)  {
+            if (areaX > areaY)
+            {
                 Console.WriteLine("\nLargest area: triangle X");
             }
-            else if (areaX < areaY)  {
+            else if (areaX < areaY)
+            {
                 Console.WriteLine("\nLargest area: triangle Y");
             }
-            else  {
+            else
+            {
                 Console.WriteLine("\nThe two triangles have the same area");
             }
         }

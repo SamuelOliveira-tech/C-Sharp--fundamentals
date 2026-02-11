@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Globalization;
 
 namespace MyApp
@@ -7,27 +7,26 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            string produto1 = "Computador";
-            string produto2 = "Mesa de escritório";
+            string product1 = "Computer";
+            string product2 = "Office desk";
 
-            byte idade = 30;
-            int codigo = 5290;      
-            char genero = 'M';
+            byte age = 30;
+            int code = 5290;
+            char gender = 'M';
 
-            double preco1 = 2100.0;
-            double preco2 = 650.50;
-            double medida = 53.234567;
+            double price1 = 2100.0;
+            double price2 = 650.50;
+            double measurement = 53.234567;
 
-            /*usando Place Holer */
-            Console.WriteLine("Produtos:\n{0}, cujo preço é $ {1:F2}\n{2}, cujo preço é $ {3:F2} \n",produto1, preco1, produto2, preco2);
+            // Using Place Holder
+            Console.WriteLine("Products:\n{0}, with a price of $ {1:F2}\n{2}, with a price of $ {3:F2} \n", product1, price1, product2, price2);
 
-            /*usando Concatenação */
-            Console.WriteLine("Registro: " + idade + " anos de idade, código " + codigo + " e gênero: " + genero + "\n");
+            // Using Concatenation
+            Console.WriteLine("Record: " + age + " years old, code " + code + " and gender: " + gender + "\n");
 
-            /*usando Interpolação */
-            Console.WriteLine($"Medida com oito casas decimais: {medida:F8}\nArredondado (três casas decimais): {medida:F3}");
-            Console.WriteLine($"Separador decimal invariant culture: { medida.ToString("F3", CultureInfo.InvariantCulture)}");
+            // Using String Interpolation
+            Console.WriteLine($"Measurement with eight decimal places: {measurement:F8}\nRounded (three decimal places): {measurement:F3}");
+            Console.WriteLine($"Decimal separator with invariant culture: {measurement.ToString("F3", CultureInfo.InvariantCulture)}");
         }
     }
 }
-
