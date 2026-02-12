@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 
 namespace TriangleCalculatorWithClass
 {
     internal class Triangle
     {
-        //public para os atributos poderem ser acessados em outro arquivo
+        //Attributes set to public for access from another file
         public double A;
         public double B;
         public double C;
+
+        public double Area() {      
+        double p = (A + B + C) / 2.0;
+        return Math.Sqrt(p * (p- A) * (p - B) * (p - C));
+        }
     }
 }
